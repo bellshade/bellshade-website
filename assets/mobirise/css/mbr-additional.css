@@ -1058,6 +1058,14 @@ section.lazy-placeholder:after {
 .cid-sH5TFoRMyl .mbr-section-btn {
   color: #ffffff;
 }
+.cid-sH6CGtjmUn {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.cid-sH6CGtjmUn .mbr-section-subtitle {
+  color: #767676;
+}
 .cid-sH5SVIOOr1 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1083,6 +1091,46 @@ section.lazy-placeholder:after {
 .cid-sH5SVIOOr1 .mbr-text,
 .cid-sH5SVIOOr1 .mbr-section-btn {
   color: #ffffff;
+}
+.cid-sH6t0TZzEi {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-sH6t0TZzEi .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-sH6t0TZzEi .media-row {
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.cid-sH6t0TZzEi .team-item {
+  transition: all .2s;
+  margin-bottom: 2rem;
+}
+.cid-sH6t0TZzEi .team-item .item-image img {
+  width: 100%;
+}
+.cid-sH6t0TZzEi .team-item .item-name p {
+  margin-bottom: 0;
+}
+.cid-sH6t0TZzEi .team-item .item-role p {
+  margin-bottom: 0;
+}
+.cid-sH6t0TZzEi .team-item .item-social {
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+}
+.cid-sH6t0TZzEi .team-item .item-social .socicon {
+  color: #232323;
+  font-size: 17px;
+}
+.cid-sH6t0TZzEi .team-item .item-caption {
+  background: #efefef;
 }
 .cid-sH5UDsFA2q {
   padding-top: 6rem;
@@ -1111,6 +1159,27 @@ section.lazy-placeholder:after {
 .cid-sH5UDsFA2q .mbr-text,
 .cid-sH5UDsFA2q .mbr-section-btn {
   color: #ffffff;
+}
+.cid-sH6F6U9hdG {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-sH6F6U9hdG .title {
+  margin-bottom: 2rem;
+}
+.cid-sH6F6U9hdG .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-sH6F6U9hdG a:not([href]):not([tabindex]) {
+  color: #fff;
+  border-radius: 3px;
+}
+.cid-sH6F6U9hdG a.btn-white:not([href]):not([tabindex]) {
+  color: #333;
+}
+.cid-sH6F6U9hdG textarea.form-control {
+  min-height: 188px;
 }
 .cid-sH5YTAMNwv {
   padding-top: 2rem;
