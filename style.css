@@ -1,10 +1,12 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: #ffa500;
+  background-color: #00008b;
+  color: white;
 }
 
 #project {
-  background-color: #ffa500;
+  background-color: #00008b;
+  color: white;
 }
 
 #team {
@@ -12,5 +14,6 @@
 }
 
 #contact {
-  background-color: #ffa500;
+  background-color: #00008b;
+  color: white;
 }
