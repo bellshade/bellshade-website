@@ -44,7 +44,7 @@
     overflow: hidden;
 }
 
-.container {
+.container-page {
     padding: 2em;
     min-height: 100vh;
     display: flex;
