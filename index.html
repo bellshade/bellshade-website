@@ -1,0 +1,325 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+
+</head>
+
+<body class="bg-gray-100">
+
+
+    <!-- nav -->
+    <nav class="flex items-center bg-white p-3 flex-wrap">
+        <a href="#" class="p-2 mr-4 inline-flex items-center lg:absolute">
+            <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-current text-white h-8 w-8 mr-2">
+                <path
+                    d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
+            </svg> -->
+            <span class="text-xl text-black font-bold uppercase tracking-wide text-2xl">Bellshade</span>
+        </a>
+        <button
+            class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+            data-target="#navigation">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center" id="navigation">
+            <div
+                class="lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start text-lg flex flex-col lg:h-auto">
+                <a href="#"
+                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Home</span>
+                </a>
+                <a href="#"
+                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>About</span>
+                </a>
+                <a href="#"
+                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Projects</span>
+                </a>
+                <a href="#"
+                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Our Team</span>
+                </a>
+                <a href="#"
+                    class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+        <button
+            class="text-white items-center inline-flex px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute">
+            Github
+        </button>
+    </nav>
+
+    <!-- Landing -->
+    <main class="h-full lg:flex lg:flex-col lg:justify-center">
+
+
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <symbol id="icon-cross" viewBox="0 0 32 32">
+                    <title>close</title>
+                    <path
+                        d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z" />
+                </symbol>
+            </defs>
+        </svg>
+
+        <!-- carousel -->
+        <div class="page" data-modal-state="closed">
+            <div class="container flex flex-col">
+                <div class="flex items-center justify-center pt-16 title">
+                    <h1 class="font-extrabold ">Learn with Our <br> Community</h1>
+                </div>
+                <div class="card-slider">
+                    <div class="card-wrapper">
+                        <article class="card">
+                            <picture class="card__background">
+                                <img src="https://source.unsplash.com/random">
+                            </picture>
+                            <div class="card__category">
+                                Bellshade
+                            </div>
+                            <h3 class="card__title">Learn Programming</h3>
+                            <div class="card__duration">
+                                Lets Go!
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card-wrapper">
+                        <article class="card">
+                            <picture class="card__background">
+                                <img src="https://source.unsplash.com/random">
+                            </picture>
+                            <div class="card__category">
+                                Bellshade
+                            </div>
+                            <h3 class="card__title">Learn Programming</h3>
+                            <div class="card__duration">
+                                Lets Go!
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card-wrapper">
+                        <article class="card">
+                            <picture class="card__background">
+                                <img src="https://source.unsplash.com/random">
+                            </picture>
+                            <div class="card__category">
+                                Bellshade
+                            </div>
+                            <h3 class="card__title">Learn Programming</h3>
+                            <div class="card__duration">
+                                Lets Go!
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card-wrapper">
+                        <article class="card">
+                            <picture class="card__background">
+                                <img src="https://source.unsplash.com/random">
+                            </picture>
+                            <div class="card__category">
+                                Bellshade
+                            </div>
+                            <h3 class="card__title">Learn Programming</h3>
+                            <div class="card__duration">
+                                Lets Go!
+                            </div>
+                        </article>
+                    </div>
+                    <div class="card-wrapper">
+                        <article class="card">
+                            <picture class="card__background">
+                                <img src="https://source.unsplash.com/random">
+                            </picture>
+                            <div class="card__category">
+                                Bellshade
+                            </div>
+                            <h3 class="card__title">Learn Programming</h3>
+                            <div class="card__duration">
+                                Lets Go!
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <div class="modal-wrapper">
+                <div class="modal">
+                    <button class="modal__close-button" type="button">
+                        <svg class="icon icon-cross">
+                            <use xlink:href="#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <div class="modal__scroll-area">
+                        <header class="modal__header">
+                            <div class="card__background">
+                                <img src="https://source.unsplash.com/random">
+                            </div>
+                            <div class="card__category">
+                                Bellshade
+                            </div>
+                            <h1 class="card__title">Learn Programming</h1>
+                            <div class="card__duration">
+                                Lets Go!
+                            </div>
+                        </header>
+                        <main class="modal__content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis?
+                                Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur
+                                commodi porro atque eligendi rerum vero nam?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis?
+                                Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur
+                                commodi porro atque eligendi rerum vero nam?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis?
+                                Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur
+                                commodi porro atque eligendi rerum vero nam?</p>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <!-- JScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".nav-toggler").each(function (_, navToggler) {
+                var target = $(navToggler).data("target");
+                $(navToggler).on("click", function () {
+                    $(target).animate({
+                        height: "toggle"
+                    });
+                });
+            });
+        });
+
+        jQuery('.card-slider').slick({
+            slidesToShow: 3,
+            autoplay: true,
+            slidesToScroll: 1,
+            dots: false,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+        let cards = document.querySelectorAll('.card');
+        let card;
+        let modal = document.querySelector('.modal');
+        let closeButton = document.querySelector('.modal__close-button');
+        let page = document.querySelector('.page');
+        const cardBorderRadius = 20;
+        const openingDuration = 600; //ms
+        const closingDuration = 600; //ms
+        const timingFunction = 'cubic-bezier(.76,.01,.65,1.38)';
+
+        var Scrollbar = window.Scrollbar;
+        Scrollbar.init(document.querySelector('.modal__scroll-area'));
+
+
+        function flipAnimation(first, last, options) {
+            let firstRect = first.getBoundingClientRect();
+            let lastRect = last.getBoundingClientRect();
+
+            let deltas = {
+                top: firstRect.top - lastRect.top,
+                left: firstRect.left - lastRect.left,
+                width: firstRect.width / lastRect.width,
+                height: firstRect.height / lastRect.height
+            };
+
+            return last.animate([{
+                transformOrigin: 'top left',
+                borderRadius: `
+            ${cardBorderRadius/deltas.width}px / ${cardBorderRadius/deltas.height}px`,
+                transform: `
+                translate(${deltas.left}px, ${deltas.top}px) 
+                scale(${deltas.width}, ${deltas.height})`
+            }, {
+                transformOrigin: 'top left',
+                transform: 'none',
+                borderRadius: `${cardBorderRadius}px`
+            }], options);
+        }
+
+        cards.forEach((item) => {
+            item.addEventListener('click', (e) => {
+                jQuery('.card-slider').slick('slickPause');
+                card = e.currentTarget;
+                page.dataset.modalState = 'opening';
+                card.classList.add('card--opened');
+                card.style.opacity = 0;
+                document.querySelector('body').classList.add('no-scroll');
+
+                let animation = flipAnimation(card, modal, {
+                    duration: openingDuration,
+                    easing: timingFunction,
+                    fill: 'both'
+                });
+
+                animation.onfinish = () => {
+                    page.dataset.modalState = 'open';
+                    animation.cancel();
+                };
+            });
+        });
+
+        closeButton.addEventListener('click', (e) => {
+            page.dataset.modalState = 'closing';
+            document.querySelector('body').classList.remove('no-scroll');
+
+            let animation = flipAnimation(card, modal, {
+                duration: closingDuration,
+                easing: timingFunction,
+                direction: 'reverse',
+                fill: 'both'
+            });
+
+            animation.onfinish = () => {
+                page.dataset.modalState = 'closed';
+                card.style.opacity = 1;
+                card.classList.remove('card--opened');
+                jQuery('.card-slider').slick('slickPlay');
+                animation.cancel();
+            };
+        });
+    </script>
+</body>
+
+</html>
