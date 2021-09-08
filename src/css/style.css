@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   font-family: 'Nunito', sans-serif;
+  transition-property: background;
+  transition-duration: 0.2s;
 }
 
 @media (min-width: 1024px) {
