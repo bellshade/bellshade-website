@@ -322,6 +322,8 @@ footer {
   font-family: 'Nunito', sans-serif;
   color: #fff;
   text-align: center;
+  position: relative;
+  bottom: 0;
 }
 
 footer h1 {
