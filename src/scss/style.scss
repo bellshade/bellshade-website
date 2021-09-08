@@ -7,7 +7,7 @@ $xl: 1200px;
 $xxl: 1400px;
 
 * {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   transition-property: background;
   transition-duration: 0.2s;
 }
@@ -18,14 +18,14 @@ $xxl: 1400px;
   }
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 #homes {
   min-height: 500px;
 }
 
 .title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
   color: #fff;
   letter-spacing: 1px;
@@ -47,7 +47,7 @@ $xxl: 1400px;
     }
 
     &:hover {
-      background-image: url('https://media.giphy.com/media/3o6ZtbBAwqZH7lGNAA/giphy.gif?cid=790b761184a166234f320069ee0fc965c56b9b93129aa7ee&rid=giphy.gif&ct=g');
+      background-image: url("https://media.giphy.com/media/3o6ZtbBAwqZH7lGNAA/giphy.gif?cid=790b761184a166234f320069ee0fc965c56b9b93129aa7ee&rid=giphy.gif&ct=g");
       background-size: cover;
       background-position: center;
       color: transparent;
@@ -140,7 +140,7 @@ $xxl: 1400px;
   text-align: left;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -237,7 +237,7 @@ $xxl: 1400px;
   line-height: 1.5;
 }
 
-[data-modal-state='closed'] {
+[data-modal-state="closed"] {
   .modal-wrapper,
   .overlay {
     pointer-events: none;
@@ -249,25 +249,25 @@ $xxl: 1400px;
   }
 }
 
-[data-modal-state='opening'] .modal__header,
-[data-modal-state='closing'] .modal__header,
-[data-modal-state='opening'] .modal__content,
-[data-modal-state='closing'] .modal__content,
-[data-modal-state='opening'] .modal__close-button,
-[data-modal-state='closing'] .modal__close-button {
+[data-modal-state="opening"] .modal__header,
+[data-modal-state="closing"] .modal__header,
+[data-modal-state="opening"] .modal__content,
+[data-modal-state="closing"] .modal__content,
+[data-modal-state="opening"] .modal__close-button,
+[data-modal-state="closing"] .modal__close-button {
   opacity: 0;
 }
 
-[data-modal-state='opening'] .overlay {
+[data-modal-state="opening"] .overlay {
   transition: opacity 500ms ease;
 }
 
-[data-modal-state='closing'] .overlay {
+[data-modal-state="closing"] .overlay {
   opacity: 0;
   transition: opacity 500ms ease;
 }
 
-[data-modal-state='open'] {
+[data-modal-state="open"] {
   .modal__header,
   .modal__content {
     transition: opacity 450ms;
@@ -322,6 +322,7 @@ $xxl: 1400px;
   .team-body {
     .team-name {
       font-size: 1.2rem;
+      text-align: center;
     }
   }
 }
