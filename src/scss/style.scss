@@ -278,7 +278,7 @@ $xxl: 1400px;
   max-height: max-content;
 }
 
-/* Team Card */
+// Team card
 @mixin flex-center-center {
   display: flex;
   justify-content: center;
@@ -322,6 +322,29 @@ $xxl: 1400px;
   .team-body {
     .team-name {
       font-size: 1.2rem;
+    }
+  }
+}
+
+// Footer
+
+footer {
+  background-color: #637fe3;
+  height: 5rem;
+  margin-top: 6.25rem;
+  border-radius: 1rem 1rem 0 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  h1 {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-top: 15px;
+    p {
+      font-size: 12px;
+      padding-top: 5px;
     }
   }
 }
