@@ -1,0 +1,118 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontSize": 18,
+  "workbench.colorTheme": "One Dark Pro",
+  "php.validate.executablePath": "",
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/src/css"
+    }
+  ],
+  "[scss]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": null,
+  "editor.fontFamily": "Inconsolata",
+  "update.mode": "none",
+  "editor.linkedEditing": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss, css]": "esbenp.prettier-vscode",
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "html.format.extraLiners": "",
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "auto-rename-tag.activationOnLanguage": ["html", "xml", "php", "javascript", "ejs"],
+  "prettier.printWidth": 250,
+  "terminal.integrated.fontSize": 19,
+  "prettier.bracketSpacing": false,
+  "html.format.contentUnformatted": "",
+  "editor.formatOnSave": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveSassCompile.settings.autoprefix": [],
+  "editor.tabCompletion": true,
+  "editor.snippetSuggestions": "top",
+  "html.format.wrapLineLength": 225,
+  "window.zoomLevel": -1,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "workbench.iconTheme": "vscode-icons",
+  // Enable per-language
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "better-comments.tags": [
+
+  
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "function",
+      "color": "#cc33ff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "pertanyaan",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "contoh",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ]
+}
