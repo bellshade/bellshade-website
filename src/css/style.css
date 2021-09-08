@@ -311,3 +311,26 @@
   font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Start: footer */
+
+footer {
+  background-color: #637FE3;
+  height: 150px;
+  margin-top: 100px;
+  border-radius: 30px 30px 0 0;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 28px;
+  font-weight: bolder;
+  padding-top: 40px;
+}
+
+footer p {
+  font-size: 12px;
+  padding-top: 10px;
+}
