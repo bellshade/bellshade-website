@@ -75,51 +75,71 @@
               <div class="card-wrapper">
                 <article class="card">
                   <picture class="card__background">
-                    <img src="https://source.unsplash.com/random" />
+                    <img src="src/img/templates/carousel/js-500x350.jpg" />
                   </picture>
-                  <div class="card__category">Bellshade</div>
-                  <h3 class="card__title">Learn Programming</h3>
-                  <div class="card__duration">Lets Go!</div>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan Javascript</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
               <div class="card-wrapper">
                 <article class="card">
                   <picture class="card__background">
-                    <img src="https://source.unsplash.com/random" />
+                    <img src="src/img/templates/carousel/ts-500x350.jpg" />
                   </picture>
-                  <div class="card__category">Bellshade</div>
-                  <h3 class="card__title">Learn Programming</h3>
-                  <div class="card__duration">Lets Go!</div>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan Typescript</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
               <div class="card-wrapper">
                 <article class="card">
                   <picture class="card__background">
-                    <img src="https://source.unsplash.com/random" />
+                    <img src="src/img/templates/carousel/php-500x350.jpg" />
                   </picture>
-                  <div class="card__category">Bellshade</div>
-                  <h3 class="card__title">Learn Programming</h3>
-                  <div class="card__duration">Lets Go!</div>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan PHP</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
               <div class="card-wrapper">
                 <article class="card">
                   <picture class="card__background">
-                    <img src="https://source.unsplash.com/random" />
+                    <img src="src/img/templates/carousel/python-500x350.jpg" />
                   </picture>
-                  <div class="card__category">Bellshade</div>
-                  <h3 class="card__title">Learn Programming</h3>
-                  <div class="card__duration">Lets Go!</div>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan Python</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
               <div class="card-wrapper">
                 <article class="card">
                   <picture class="card__background">
-                    <img src="https://source.unsplash.com/random" />
+                    <img src="src/img/templates/carousel/cpp-500x350.jpg" />
                   </picture>
-                  <div class="card__category">Bellshade</div>
-                  <h3 class="card__title">Learn Programming</h3>
-                  <div class="card__duration">Lets Go!</div>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan C++</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
+                </article>
+              </div>
+              <div class="card-wrapper">
+                <article class="card">
+                  <picture class="card__background">
+                    <img src="src/img/templates/carousel/go-500x350.jpg" />
+                  </picture>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan Golang</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
+                </article>
+              </div>
+              <div class="card-wrapper">
+                <article class="card">
+                  <picture class="card__background">
+                    <img src="src/img/templates/carousel/java-500x350.jpg" />
+                  </picture>
+                  <div class="card__category">Basic</div>
+                  <h3 class="card__title">Pengenalan Java</h3>
+                  <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
             </div>
@@ -135,16 +155,20 @@
               <div class="modal__scroll-area">
                 <header class="modal__header">
                   <div class="card__background">
-                    <img src="https://source.unsplash.com/random" />
+                    <img class="card__background-image" src="" />
                   </div>
-                  <div class="card__category">Bellshade</div>
-                  <h1 class="card__title">Learn Programming</h1>
-                  <div class="card__duration">Lets Go!</div>
                 </header>
                 <main class="modal__content">
+                  <div class="modal__category"></div>
+                  <h1 class="modal__title"></h1>
+                  <br>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
+
+                  <div class="text-center py-2">Ayo, tunggu apa lagi?</div>
+                  <div class="flex justify-center">
+                    <button class="card__button px-3 py-1 rounded justify-center"><span>Let's Go!</span>&nbsp;<span>&raquo;</span></button>
+                  </div>
                 </main>
               </div>
             </div>
@@ -227,9 +251,14 @@
       })
 
       let cards = document.querySelectorAll('.card')
+      let cardTitle = document.querySelectorAll('.card__title');
+      let cardCategory = document.querySelectorAll('.card__category');
       let card
       let modal = document.querySelector('.modal')
+      let modalTitle = document.querySelector('.modal__title');
+      let modalCategory = document.querySelector('.modal__category');
       let closeButton = document.querySelector('.modal__close-button')
+      const cardBgImage = document.querySelector('.card__background-image');
       let page = document.querySelector('.page')
       const cardBorderRadius = 20
       const openingDuration = 600 //ms
@@ -279,6 +308,14 @@
           card.style.opacity = 0
           document.querySelector('body').classList.add('no-scroll')
 
+          // change modal bgImage based on card that is clicked
+          cardBgImage.src = e.target.firstElementChild.src;
+
+          modalCategory.innerHTML = e.target.nextElementSibling.innerHTML;
+
+          modalTitle.innerHTML = e.target.nextElementSibling.nextElementSibling.innerHTML;
+          // console.log(e);
+
           let animation = flipAnimation(card, modal, {
             duration: openingDuration,
             easing: timingFunction,
@@ -317,7 +354,7 @@
 
         members.forEach((member) => {
           getContents(member.url).then((res) => {
-            console.log(res)
+            // console.log(res)
             membersContainer.innerHTML += `
               <div class="team-card m-5">
                 <div class="team-img-container">
