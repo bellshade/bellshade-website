@@ -45,9 +45,19 @@
             <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Contact</span>
             </a>
-            <a href="https://github.com/bellshade" target="_blank" class="lg:hidden text-white items-center inline-flex px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute">Github</a>
+            <a
+              href="https://github.com/bellshade"
+              target="_blank"
+              class="lg:hidden text-white items-center inline-flex px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
+              >Github</a
+            >
           </div>
-          <a href="https://github.com/bellshade" target="_blank" class="hidden lg:inline-flex text-white items-center px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute">Github</a>
+          <a
+            href="https://github.com/bellshade"
+            target="_blank"
+            class="hidden lg:inline-flex text-white items-center px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
+            >Github</a
+          >
         </div>
       </nav>
 
@@ -57,7 +67,9 @@
           <defs>
             <symbol id="icon-cross" viewBox="0 0 32 32">
               <title>close</title>
-              <path d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z" />
+              <path
+                d="M31.7 25.7L22 16l9.7-9.7a1 1 0 0 0 0-1.4L27.1.3a1 1 0 0 0-1.4 0L16 10 6.3.3a1 1 0 0 0-1.4 0L.3 4.9a1 1 0 0 0 0 1.4L10 16 .3 25.7a1 1 0 0 0 0 1.4l4.6 4.6a1 1 0 0 0 1.4 0L16 22l9.7 9.7a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"
+              />
             </symbol>
           </defs>
         </svg>
@@ -161,9 +173,15 @@
                 <main class="modal__content">
                   <div class="modal__category"></div>
                   <h1 class="modal__title"></h1>
-                  <br>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum vero nam?</p>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum
+                    vero nam?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum
+                    vero nam?
+                  </p>
 
                   <div class="text-center py-2">Ayo, tunggu apa lagi?</div>
                   <div class="flex justify-center">
@@ -188,8 +206,8 @@
           </div>
           <div class="flex items-center">
             <p class="text-base text-white tracking-wider">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium aliquid corporis rem, iure itaque accusamus non assumenda incidunt eos corrupti, natus doloribus reiciendis laborum vero excepturi fugit, possimus
-              repudiandae. Officiis vero placeat optio atque cupiditate voluptatum ipsum! Reprehenderit culpa mollitia assumenda aut impedit possimus minus praesentium tenetur ullam quibusdam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium aliquid corporis rem, iure itaque accusamus non assumenda incidunt eos corrupti, natus doloribus reiciendis laborum vero excepturi
+              fugit, possimus repudiandae. Officiis vero placeat optio atque cupiditate voluptatum ipsum! Reprehenderit culpa mollitia assumenda aut impedit possimus minus praesentium tenetur ullam quibusdam.
             </p>
           </div>
         </div>
@@ -251,14 +269,14 @@
       })
 
       let cards = document.querySelectorAll('.card')
-      let cardTitle = document.querySelectorAll('.card__title');
-      let cardCategory = document.querySelectorAll('.card__category');
+      let cardTitle = document.querySelectorAll('.card__title')
+      let cardCategory = document.querySelectorAll('.card__category')
       let card
       let modal = document.querySelector('.modal')
-      let modalTitle = document.querySelector('.modal__title');
-      let modalCategory = document.querySelector('.modal__category');
+      let modalTitle = document.querySelector('.modal__title')
+      let modalCategory = document.querySelector('.modal__category')
       let closeButton = document.querySelector('.modal__close-button')
-      const cardBgImage = document.querySelector('.card__background-image');
+      const cardBgImage = document.querySelector('.card__background-image')
       let page = document.querySelector('.page')
       const cardBorderRadius = 20
       const openingDuration = 600 //ms
@@ -309,11 +327,11 @@
           document.querySelector('body').classList.add('no-scroll')
 
           // change modal bgImage based on card that is clicked
-          cardBgImage.src = e.target.firstElementChild.src;
+          cardBgImage.src = e.target.firstElementChild.src
 
-          modalCategory.innerHTML = e.target.nextElementSibling.innerHTML;
+          modalCategory.innerHTML = e.target.nextElementSibling.innerHTML
 
-          modalTitle.innerHTML = e.target.nextElementSibling.nextElementSibling.innerHTML;
+          modalTitle.innerHTML = e.target.nextElementSibling.nextElementSibling.innerHTML
           // console.log(e);
 
           let animation = flipAnimation(card, modal, {
