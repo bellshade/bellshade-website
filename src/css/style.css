@@ -87,6 +87,11 @@
   padding: 0.6em;
 }
 
+.slick-prev::before,
+.slick-next::before {
+  color: #000 !important;
+}
+
 .card-slider {
   margin: auto;
   width: 100%;
