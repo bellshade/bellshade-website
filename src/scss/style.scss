@@ -111,6 +111,13 @@ nav {
   padding: 0.6em;
 }
 
+.slick-prev,
+.slick-next {
+  &::before {
+    color: #000 !important;
+  }
+}
+
 .card-slider {
   margin: auto;
   width: 100%;
