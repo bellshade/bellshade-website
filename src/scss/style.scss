@@ -145,7 +145,11 @@ $xxl: 1400px;
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, rgba(70, 70, 70, 0.5), rgba(255, 255, 255, 0) 70%);
+    background: linear-gradient(
+      to top,
+      rgba(70, 70, 70, 0.5),
+      rgba(255, 255, 255, 0) 70%
+    );
   }
 }
 
