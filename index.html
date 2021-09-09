@@ -18,9 +18,9 @@
     <!-- Wrapper -->
     <div class="container max-w-6xl mx-auto">
       <!-- Navbar -->
-      <nav class="flex items-center bg-white p-3 flex-wrap lg:relative">
-        <a href="#" class="p-2 mr-4 inline-flex items-center lg:absolute">
-          <span class="text-xl text-black font-bold uppercase tracking-wide text-2xl" title="Bellshade - Learn with Our Community">Bellshade</span>
+      <nav class="flex items-center bg-white">
+        <a href="#" class="p-2 mr-4 flex items-center">
+          <h1 class="text-xl text-black font-bold uppercase tracking-wide text-2xl" title="Bellshade - Learn with Our Community">Bellshade</h1>
         </a>
         <button class="text-white inline-flex p-2 text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-4 hover:text-white outline-none nav-toggler" data-target="#navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -52,13 +52,8 @@
               >Github</a
             >
           </div>
-          <a
-            href="https://github.com/bellshade"
-            target="_blank"
-            class="hidden lg:inline-flex text-white items-center px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
-            >Github</a
-          >
         </div>
+        <a href="https://github.com/bellshade" target="_blank" class="flex text-white items-center px-4 py-1 btn-github bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none">Github</a>
       </nav>
 
       <!-- Landing -->
@@ -278,6 +273,7 @@
       let closeButton = document.querySelector('.modal__close-button')
       const cardBgImage = document.querySelector('.card__background-image')
       let page = document.querySelector('.page')
+
       const cardBorderRadius = 20
       const openingDuration = 600 //ms
       const closingDuration = 600 //ms
