@@ -1,43 +1,66 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
+  -webkit-transition-property: background;
   transition-property: background;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
-@media (min-width: 1024px) {
-  .top-navbar {
-    display: inline-flex !important;
-  }
+html {
+  scroll-behavior: smooth;
 }
+
 #homes {
   min-height: 500px;
 }
 
+nav {
+  z-index: 10;
+  position: fixed;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 0.75rem 1.75rem;
+  left: 0;
+  right: 0;
+}
+
+nav .btn-github {
+  display: none;
+}
+
 .title {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   text-align: center;
   color: #fff;
   letter-spacing: 1px;
 }
+
 .title h1 {
   color: #000;
   text-transform: uppercase;
   font-size: 5rem;
   line-height: 6rem;
 }
+
 @media (max-width: 576px) {
   .title h1 {
     font-size: calc(25vw / 2);
     line-height: calc(28vw / 2);
   }
 }
+
 @media (min-width: 576px) and (max-width: 1200px) {
   .title h1 {
     font-size: calc(16vw / 2);
     line-height: calc(18vw / 2);
   }
 }
+
 .title h1:hover {
   background-image: url("https://media.giphy.com/media/3o6ZtbBAwqZH7lGNAA/giphy.gif?cid=790b761184a166234f320069ee0fc965c56b9b93129aa7ee&rid=giphy.gif&ct=g");
   background-size: cover;
@@ -56,6 +79,8 @@
 .container-page {
   padding: 2em;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -69,7 +94,8 @@
 }
 
 .blend-image {
-  filter: brightness(250%) grayscale(100%);
+  -webkit-filter: brightness(250%) grayscale(100%);
+          filter: brightness(250%) grayscale(100%);
   mix-blend-mode: screen;
 }
 
@@ -79,8 +105,10 @@
   min-height: 100%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  object-fit: cover;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slick-slide {
@@ -94,11 +122,20 @@
 
 .card {
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 2em;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -106,7 +143,9 @@
   height: 240px;
   /* width: 385px !important; */
 }
+
 .card > * {
+  -webkit-transition: opacity 350ms;
   transition: opacity 350ms;
 }
 
@@ -125,13 +164,15 @@
   z-index: -1;
   text-align: left;
 }
+
 .card__background::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(70, 70, 70, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
   background: linear-gradient(to top, rgba(70, 70, 70, 0.5), rgba(255, 255, 255, 0) 70%);
 }
 
@@ -183,11 +224,14 @@
 }
 
 .modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity 150ms ease;
   transition: opacity 150ms ease;
 }
 
@@ -220,6 +264,7 @@
   right: 0;
   padding: 2em;
   z-index: 2;
+  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -230,11 +275,20 @@
 .modal__header {
   text-align: center;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0.5em;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 300px;
   z-index: 1;
 }
@@ -245,67 +299,94 @@
   line-height: 1.5;
 }
 
-[data-modal-state=closed] .modal-wrapper,
-[data-modal-state=closed] .overlay {
+[data-modal-state='closed'] .modal-wrapper,
+[data-modal-state='closed'] .overlay {
   pointer-events: none;
 }
-[data-modal-state=closed] .modal,
-[data-modal-state=closed] .overlay {
+
+[data-modal-state='closed'] .modal,
+[data-modal-state='closed'] .overlay {
   opacity: 0;
 }
 
-[data-modal-state=opening] .modal__header,
-[data-modal-state=closing] .modal__header,
-[data-modal-state=opening] .modal__content,
-[data-modal-state=closing] .modal__content,
-[data-modal-state=opening] .modal__close-button,
-[data-modal-state=closing] .modal__close-button {
+[data-modal-state='opening'] .modal__header,
+[data-modal-state='closing'] .modal__header,
+[data-modal-state='opening'] .modal__content,
+[data-modal-state='closing'] .modal__content,
+[data-modal-state='opening'] .modal__close-button,
+[data-modal-state='closing'] .modal__close-button {
   opacity: 0;
 }
 
-[data-modal-state=opening] .overlay {
+[data-modal-state='opening'] .overlay {
+  -webkit-transition: opacity 500ms ease;
   transition: opacity 500ms ease;
 }
 
-[data-modal-state=closing] .overlay {
+[data-modal-state='closing'] .overlay {
   opacity: 0;
+  -webkit-transition: opacity 500ms ease;
   transition: opacity 500ms ease;
 }
 
-[data-modal-state=open] .modal__header,
-[data-modal-state=open] .modal__content {
+[data-modal-state='open'] .modal__header,
+[data-modal-state='open'] .modal__content {
+  -webkit-transition: opacity 450ms;
   transition: opacity 450ms;
 }
 
 #about {
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
   max-height: max-content;
 }
 
 .team-card {
-  flex: 16%;
+  -webkit-box-flex: 16%;
+      -ms-flex: 16%;
+          flex: 16%;
 }
+
 .team-card .team-img-container {
   margin: 0 auto;
   position: relative;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
   max-width: max-content;
 }
+
 .team-card .team-img-container .team-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
 }
+
 .team-card .team-img-container .team-img img {
   width: 100%;
 }
+
 .team-card .team-img-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 100%;
   width: 1.5rem;
   height: 1.5rem;
@@ -315,6 +396,7 @@
   bottom: 0;
   right: 0;
 }
+
 .team-card .team-body .team-name {
   font-size: 1.2rem;
 }
@@ -330,14 +412,32 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 footer h1 {
   font-size: 18px;
   font-weight: bolder;
   padding-top: 15px;
 }
+
 footer h1 p {
   font-size: 12px;
   padding-top: 5px;
 }
 
+@media (min-width: 1024px) {
+  nav {
+    padding: 0.75rem 8rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav .btn-github {
+    display: block;
+    margin-left: 2.5rem;
+  }
+  .top-navbar {
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

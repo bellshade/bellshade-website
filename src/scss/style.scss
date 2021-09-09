@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 // Breakpoint
 $xs: 0;
 $sm: 576px;
@@ -12,16 +14,27 @@ $xxl: 1400px;
   transition-duration: 0.2s;
 }
 
-@media (min-width: 1024px) {
-  .top-navbar {
-    display: inline-flex !important;
-  }
+html {
+  scroll-behavior: smooth;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #homes {
   min-height: 500px;
+}
+
+nav {
+  z-index: 10;
+  position: fixed;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.75rem 1.75rem;
+  left: 0;
+  right: 0;
+
+  .btn-github {
+    display: none;
+  }
 }
 
 .title {
@@ -376,5 +389,21 @@ footer {
       font-size: 12px;
       padding-top: 5px;
     }
+  }
+}
+
+// Breakpoint style
+@media (min-width: 1024px) {
+  nav {
+    padding: 0.75rem 8rem;
+    flex-wrap: nowrap;
+
+    .btn-github {
+      display: block;
+      margin-left: 2.5rem;
+    }
+  }
+  .top-navbar {
+    display: inline-flex !important;
   }
 }

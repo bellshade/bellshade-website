@@ -6,6 +6,7 @@
       "savePath": "/src/css"
     }
   ],
+  "liveSassCompile.settings.generateMap": true,
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
