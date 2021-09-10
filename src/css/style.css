@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
   font-family: 'Nunito', sans-serif;
   -webkit-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 html {
@@ -19,10 +19,10 @@ nav {
   z-index: 10;
   position: fixed;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   padding: 0.75rem 1.75rem;
   left: 0;
@@ -36,7 +36,7 @@ nav .btn-github {
 .title {
   font-family: 'Montserrat';
   text-align: center;
-  color: #fff;
+  color: #f1f1f1;
   letter-spacing: 1px;
 }
 
@@ -62,7 +62,7 @@ nav .btn-github {
 }
 
 .title h1:hover {
-  background-image: url("https://media.giphy.com/media/3o6ZtbBAwqZH7lGNAA/giphy.gif?cid=790b761184a166234f320069ee0fc965c56b9b93129aa7ee&rid=giphy.gif&ct=g");
+  background-image: url('https://media.giphy.com/media/3o6ZtbBAwqZH7lGNAA/giphy.gif?cid=790b761184a166234f320069ee0fc965c56b9b93129aa7ee&rid=giphy.gif&ct=g');
   background-size: cover;
   background-position: center;
   color: transparent;
@@ -95,7 +95,7 @@ nav .btn-github {
 
 .blend-image {
   -webkit-filter: brightness(250%) grayscale(100%);
-          filter: brightness(250%) grayscale(100%);
+  filter: brightness(250%) grayscale(100%);
   mix-blend-mode: screen;
 }
 
@@ -106,9 +106,9 @@ nav .btn-github {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .slick-slide {
@@ -117,7 +117,7 @@ nav .btn-github {
 
 .slick-prev::before,
 .slick-next::before {
-  color: #000 !important;
+  color: #2563eb !important;
 }
 
 .card-slider {
@@ -126,21 +126,21 @@ nav .btn-github {
 }
 
 .card {
-  background: #fff;
+  background: #f1f1f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 2em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -177,13 +177,23 @@ nav .btn-github {
   right: 0;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(70, 70, 70, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(to top, rgba(70, 70, 70, 0.5), rgba(255, 255, 255, 0) 70%);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(rgba(70, 70, 70, 0.5)),
+    color-stop(70%, rgba(255, 255, 255, 0))
+  );
+  background: linear-gradient(
+    to top,
+    rgba(70, 70, 70, 0.5),
+    rgba(255, 255, 255, 0) 70%
+  );
 }
 
 .card__category {
   text-transform: uppercase;
-  color: #fff;
+  color: #f1f1f1;
   border-radius: 3px;
   background: #198754;
   font-size: 0.85em;
@@ -193,7 +203,7 @@ nav .btn-github {
 
 .modal__category {
   text-transform: uppercase;
-  color: #fff;
+  color: #f1f1f1;
   border-radius: 3px;
   background: #198754;
   font-size: 0.85em;
@@ -205,7 +215,7 @@ nav .btn-github {
 
 .card__title {
   margin: 0.5em 0;
-  color: #fff;
+  color: #f1f1f1;
   text-shadow: 0px 0px 3px #000;
 }
 
@@ -214,7 +224,7 @@ nav .btn-github {
 }
 
 .card__button {
-  color: #fff;
+  color: #f1f1f1;
   background-color: #337ab7;
 }
 
@@ -247,7 +257,7 @@ nav .btn-github {
   width: 90vw;
   height: 90vh;
   max-width: 500px;
-  background: #fff;
+  background: #f1f1f1;
   border-radius: 20px;
 }
 
@@ -286,14 +296,14 @@ nav .btn-github {
   padding: 0.5em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 300px;
   z-index: 1;
 }
@@ -348,8 +358,8 @@ nav .btn-github {
 
 .team-card {
   -webkit-box-flex: 16%;
-      -ms-flex: 16%;
-          flex: 16%;
+  -ms-flex: 16%;
+  flex: 16%;
 }
 
 .team-card .team-img-container {
@@ -365,17 +375,17 @@ nav .btn-github {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   overflow: hidden;
   width: 5rem;
   height: 5rem;
   border-radius: 100%;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.08);
 }
 
 .team-card .team-img-container .team-img img {
@@ -387,16 +397,16 @@ nav .btn-github {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 100%;
   width: 1.5rem;
   height: 1.5rem;
   text-align: center;
-  background: #fff;
+  background: #f1f1f1;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -407,11 +417,10 @@ nav .btn-github {
 }
 
 footer {
-  background-color: #637fe3;
   height: 5rem;
   margin-top: 6.25rem;
   border-radius: 1rem 1rem 0 0;
-  color: #fff;
+  color: #f1f1f1;
   text-align: center;
   position: relative;
   bottom: 0;
@@ -433,7 +442,7 @@ footer h1 p {
   nav {
     padding: 0.75rem 8rem;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   nav .btn-github {
     display: block;
