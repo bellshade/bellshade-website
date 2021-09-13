@@ -9,8 +9,9 @@
     "deploy:maintainer": "npm run build && node deploy-maintainer.js"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.3.4",
     "gh-pages": "^3.2.3",
+    "tailwindcss": "^2.2.15",
     "vite": "^2.5.4"
   },
   "dependencies": {
