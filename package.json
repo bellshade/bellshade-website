@@ -1,0 +1,22 @@
+{
+  "name": "bellshade.github.io",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist",
+    "deploy:maintainer": "npm run build && node deploy-maintainer.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "gh-pages": "^3.2.3",
+    "tailwindcss": "^2.2.15",
+    "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.6.3"
+  }
+}

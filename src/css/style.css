@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   font-family: 'Nunito', sans-serif;
   -webkit-transition-property: background;
