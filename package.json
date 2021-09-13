@@ -6,7 +6,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "deploy": "npm run build && gh-pages -d dist",
-    "deploy:maintainer": "npm run build && node deploy-maintainer.js"
+    "deploy:maintainer": "npm run build && gh-pages -d dist -r git@github.com:bellshade/bellshade.github.io.git"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
