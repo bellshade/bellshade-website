@@ -1,0 +1,18 @@
+{
+  "name": "bellshade.github.io",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.6.3"
+  }
+}
