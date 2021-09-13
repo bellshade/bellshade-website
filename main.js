@@ -101,14 +101,16 @@ cards.forEach((item) => {
     card.style.opacity = 0
     document.querySelector('body').classList.add('no-scroll')
 
+    const img = item.querySelector('img')
+    const category = item.querySelector('.card__category')
+    const title = item.querySelector('.card__title')
+
     // change modal bgImage based on card that is clicked
-    cardBgImage.src = e.target.firstElementChild.src
+    cardBgImage.src = img.src
 
-    modalCategory.innerHTML = e.target.nextElementSibling.innerHTML
+    modalCategory.innerHTML = category.innerHTML
 
-    modalTitle.innerHTML =
-      e.target.nextElementSibling.nextElementSibling.innerHTML
-    // console.log(e);
+    modalTitle.innerHTML = title.innerHTML
 
     let animation = flipAnimation(card, modal, {
       duration: openingDuration,
