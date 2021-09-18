@@ -1,10 +1,6 @@
 import constant from './constant'
 
-const getContents = (url) =>
-  fetch(url, {
-    method: 'GET',
-    headers: { authorization: `token ${constant.token}` },
-  }).then((res) => res.json())
+const getContents = (url) => fetch(url).then((res) => res.json())
 
 export const getPublicMembers = () =>
   getContents('https://api.github.com/orgs/bellshade/public_members')
