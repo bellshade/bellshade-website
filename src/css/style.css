@@ -68,7 +68,7 @@ nav .btn-github {
 }
 
 .title h1:hover {
-  background-image: url('https://media.giphy.com/media/3o6ZtbBAwqZH7lGNAA/giphy.gif?cid=790b761184a166234f320069ee0fc965c56b9b93129aa7ee&rid=giphy.gif&ct=g');
+  background-image: url('../img/gif/backgroundGIF-min.gif');
   background-size: cover;
   background-position: center;
   color: transparent;
