@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "BASE=forked npm run build && gh-pages -d dist",
     "deploy:maintainer": "npm run build && gh-pages -d dist -r git@github.com:bellshade/bellshade.github.io.git"
   },
   "devDependencies": {
