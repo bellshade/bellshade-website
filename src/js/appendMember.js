@@ -1,7 +1,14 @@
 import constant from './constant'
 
+const strToDOM = (str) => {
+  const parser = new DOMParser()
+  const doc = parser.parseFromString(str, 'text/html')
+
+  return doc.querySelector('.team-card.m-5')
+}
+
 const appendMember = (membersContainer) => (res) => {
-  membersContainer.innerHTML += `
+  const elString = `
           <div class="team-card m-5">
             <div class="team-img-container">
               <div class="team-img">
@@ -22,6 +29,11 @@ const appendMember = (membersContainer) => (res) => {
             </div>
           </div>
         `
+
+  const converted = strToDOM(elString)
+  membersContainer.append(converted)
+
+  return converted.querySelector('.team-img img')
 }
 
 export default appendMember
