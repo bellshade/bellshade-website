@@ -149,7 +149,6 @@ closeButton.addEventListener('click', (e) => {
 
 getPublicMembers().then((members) => {
   const membersContainer = document.querySelector('#team #members')
-  const appender = appendMember(membersContainer)
 
   // Initialize lazy loader
   let observer = new IntersectionObserver(
@@ -164,5 +163,6 @@ getPublicMembers().then((members) => {
     { threshold: 0.65 }
   )
 
-  members.map(appender).forEach((img) => observer.observe(img))
+  const appender = appendMember(membersContainer, observer)
+  members.forEach(appender)
 })

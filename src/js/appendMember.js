@@ -7,8 +7,8 @@ const strToDOM = (str) => {
   return doc.querySelector('.team-card.m-5')
 }
 
-const appendMember = (membersContainer) => (res) => {
-  const elString = `
+const appendMember = (membersContainer, observer) => (res) => {
+  const converted = strToDOM(`
           <div class="team-card m-5">
             <div class="team-img-container">
               <div class="team-img">
@@ -28,12 +28,10 @@ const appendMember = (membersContainer) => (res) => {
               }</h2>
             </div>
           </div>
-        `
+        `)
 
-  const converted = strToDOM(elString)
   membersContainer.append(converted)
-
-  return converted.querySelector('.team-img img')
+  observer.observe(converted.querySelector('.team-img img'))
 }
 
 export default appendMember
