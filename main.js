@@ -8,7 +8,7 @@ import './src/css/style.css'
 import './node_modules/slick-carousel/slick/slick.css'
 import './node_modules/slick-carousel/slick/slick-theme.css'
 
-import { getPublicMembers, getUserInfo } from './src/js/githubApiWrapper'
+import { getPublicMembers } from './src/js/githubApiWrapper'
 import appendMember from './src/js/appendMember'
 
 $(function () {
@@ -163,14 +163,6 @@ getPublicMembers().then((members) => {
     { threshold: 0.65 }
   )
 
-  // Wait all user fetched
-  Promise.all(
-    members.map((member) =>
-      getUserInfo(member.login).then(appendMember(membersContainer))
-    )
-  ).then(() => {
-    // Observe all image
-    const teamsImg = document.querySelectorAll('.team-img img')
-    teamsImg.forEach((img) => observer.observe(img))
-  })
+  const appender = appendMember(membersContainer, observer)
+  members.forEach(appender)
 })
