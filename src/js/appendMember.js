@@ -9,14 +9,14 @@ const strToDOM = (str) => {
 
 const appendMember = (membersContainer, observer) => (res) => {
   const converted = strToDOM(`
-          <div class="team-card m-5">
-            <div class="team-img-container">
-              <div class="team-img">
-                <img src="${constant.dummyImage}" data-src="${
+          <div class="team-card relative m-5">
+            <div class="mx-auto relative max-w-max">
+              <div class="flex justify-center items-center overflow-hidden w-20 h-20 rounded-full shadow-md">
+                <img class="w-full" src="${constant.dummyImage}" data-src="${
     res.avatar_url
   }&s=80" alt="${res.login}" />
               </div>
-              <a href="${
+              <a class="absolute bottom-0 right-0 flex justify-center items-center rounded-full w-6 h-6 bg-white" href="${
                 res.html_url
               }" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -24,16 +24,14 @@ const appendMember = (membersContainer, observer) => (res) => {
                 </svg>
               </a>
             </div>
-            <div class="team-body">
-              <h2 class="team-name">${
-                res.name == null ? res.login : res.name
-              }</h2>
-            </div>
+            <h2 class="team-name invisible text-xl px-1 rounded-md absolute bottom-full bg-white filter drop-shadow-md w-full text-center mb-2">${
+              res.name == null ? res.login : res.name
+            }</h2>
           </div>
         `)
 
   membersContainer.append(converted)
-  observer.observe(converted.querySelector('.team-img img'))
+  observer.observe(converted.querySelector('.team-card img'))
 }
 
 export default appendMember
