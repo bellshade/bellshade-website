@@ -5,11 +5,12 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "BASE=forked npm run build && gh-pages -d dist",
+    "deploy": "cross-env BASE=forked npm run build && gh-pages -d dist",
     "deploy:maintainer": "npm run build && gh-pages -d dist -r git@github.com:bellshade/bellshade.github.io.git"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
+    "cross-env": "^7.0.3",
     "gh-pages": "^3.2.3",
     "tailwindcss": "^2.2.15",
     "vite": "^2.5.4"
