@@ -211,19 +211,3 @@ html {
   max-height: -moz-max-content;
   max-height: max-content;
 }
-
-.team-card {
-  flex: 16%;
-}
-.team-card .team-name::before {
-  @apply absolute block top-full;
-  left: 46%;
-  content: '';
-  border: 0.4rem solid #ffffff;
-  border-bottom: none;
-  border-left-color: transparent;
-  border-right-color: transparent;
-}
-.team-card:hover .team-name {
-  @apply visible;
-}

@@ -18,6 +18,7 @@
   "dependencies": {
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1",
-    "smooth-scrollbar": "^8.6.3"
+    "smooth-scrollbar": "^8.6.3",
+    "tippy.js": "^6.3.1"
   }
 }
