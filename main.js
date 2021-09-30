@@ -95,9 +95,9 @@ function flipAnimation(first, last, options) {
 }
 
 cards.forEach((item) => {
-  item.addEventListener('click', (e) => {
+  item.querySelector('.card__button').addEventListener('click', (e) => {
     $('.card-slider').slick('slickPause')
-    card = e.currentTarget
+    card = item
     page.dataset.modalState = 'opening'
     card.classList.add('card--opened')
     card.style.opacity = 0
