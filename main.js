@@ -43,16 +43,22 @@ $(function () {
   })
 })
 
-let cards = document.querySelectorAll('.card')
-let cardTitle = document.querySelectorAll('.card__title')
-let cardCategory = document.querySelectorAll('.card__category')
 let card
-let modal = document.querySelector('.modal')
-let modalTitle = document.querySelector('.modal__title')
-let modalCategory = document.querySelector('.modal__category')
-let closeButton = document.querySelector('.modal__close-button')
+
+const cards = document.querySelectorAll('.card')
+const cardTitle = document.querySelectorAll('.card__title')
+const cardCategory = document.querySelectorAll('.card__category')
+
+const modal = document.querySelector('.modal')
+const modalTitle = document.querySelector('.modal__title')
+const modalCategory = document.querySelector('.modal__category')
+const modalAnchor = document.querySelector('.modal__anchor')
+const modalDescription = document.querySelector('.modal__description')
+const closeButton = document.querySelector('.modal__close-button')
+
 const cardBgImage = document.querySelector('.card__background-image')
-let page = document.querySelector('.page')
+
+const page = document.querySelector('.page')
 
 const cardBorderRadius = 20
 const openingDuration = 600 //ms
@@ -106,6 +112,9 @@ cards.forEach((item) => {
     const img = item.querySelector('img')
     const category = item.querySelector('.card__category')
     const title = item.querySelector('.card__title')
+
+    modalAnchor.href = `https://github.com/bellshade/${title.dataset.repo}`
+    modalDescription.innerText = title.dataset.description
 
     // change modal bgImage based on card that is clicked
     cardBgImage.src = img.src
