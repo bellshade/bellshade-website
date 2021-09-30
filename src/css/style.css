@@ -173,22 +173,22 @@ html {
   @apply p-8 text-gray-600 leading-6;
 }
 
-[data-modal-state='closed'] .modal-wrapper,
-[data-modal-state='closed'] .overlay {
+/*[data-modal-state='closed'] .modal-wrapper,*/
+[data-modal-state='closed'] :where(.modal-wrapper, .overlay) {
   pointer-events: none;
 }
 
-[data-modal-state='closed'] .modal,
-[data-modal-state='closed'] .overlay {
+/*[data-modal-state='closed'] .modal,*/
+[data-modal-state='closed'] :where(.modal, .overlay) {
   opacity: 0;
 }
 
-[data-modal-state='opening'] .modal__header,
-[data-modal-state='closing'] .modal__header,
-[data-modal-state='opening'] .modal__content,
-[data-modal-state='closing'] .modal__content,
-[data-modal-state='opening'] .modal__close-button,
-[data-modal-state='closing'] .modal__close-button {
+/*[data-modal-state='opening'] .modal__header,*/
+:where([data-modal-state='opening'], [data-modal-state='closing']) .modal__header,
+/*[data-modal-state='opening'] .modal__content,*/
+:where([data-modal-state='opening'], [data-modal-state='closing']) .modal__content,
+/*[data-modal-state='opening'] .modal__close-button,*/
+:where([data-modal-state='opening'], [data-modal-state='closing']) .modal__close-button {
   @apply opacity-0;
 }
 
@@ -201,8 +201,8 @@ html {
   transition: opacity 500ms ease;
 }
 
-[data-modal-state='open'] .modal__header,
-[data-modal-state='open'] .modal__content {
+/*[data-modal-state='open'] .modal__header,*/
+[data-modal-state='open'] :where(.modal__header, .modal__content) {
   transition: opacity 450ms;
 }
 
