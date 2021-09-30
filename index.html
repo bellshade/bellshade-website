@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta property="og:url" content="https://bellshade.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bellshade - Learn with Our Community" />
+    <meta property="og:description" content="Komunitas untuk mengelola dan menulis kode untuk proyek pendidikan sumber terbuka Indonesia" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/reacto11mecha/bellshade.github.io/gh-pages/og_img.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link rel="shortcut icon" href="/favicon.ico" />
+
     <title>Bellshade - Learn with Our Community</title>
-    <script type="module" crossorigin src="/assets/index.c6496857.js"></script>
-    <link rel="modulepreload" href="/assets/vendor.971cedfd.js">
-    <link rel="stylesheet" href="/assets/index.887b6ad9.css">
+    <script type="module" crossorigin src="/assets/index.733eb8da.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.c0970321.js">
+    <link rel="stylesheet" href="/assets/index.fec8162d.css">
   </head>
   <body class="bg-gray-100">
     <!-- Wrapper -->
     <div class="container max-w-6xl mx-auto">
       <!-- Navbar -->
-      <nav class="flex items-center bg-white">
+      <nav class="z-10 fixed left-0 right-0 flex flex-wrap lg:flex-nowrap items-center justify-evenly w-full py-3 px-7 lg:px-32 bg-white">
         <a href="#" class="p-2 mr-4 flex items-center">
-          <h1 class="text-xl text-black font-bold uppercase tracking-wide text-2xl" title="Bellshade - Learn with Our Community">Bellshade</h1>
+          <h1 class="text-black font-bold uppercase tracking-wide text-2xl" title="Bellshade - Learn with Our Community">Bellshade</h1>
         </a>
-        <button class="text-white inline-flex p-2 text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-4 hover:text-white outline-none nav-toggler" data-target="#navigation">
+        <button class="inline-flex p-2 text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-4 hover:text-white outline-none nav-toggler" data-target="#navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
         </button>
 
-        <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center" id="navigation">
+        <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center" id="navigation">
           <div class="lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start text-lg flex flex-col lg:h-auto">
             <a href="#homes" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Home</span>
@@ -48,7 +56,7 @@
               href="https://github.com/bellshade"
               target="_blank"
               rel="noopener noreferrer"
-              class="lg:hidden text-white items-center inline-flex px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
+              class="lg:hidden text-white inline-block px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
               >Github</a
             >
           </div>
@@ -57,14 +65,14 @@
           href="https://github.com/bellshade"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex text-white items-center px-4 py-1 btn-github bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none"
+          class="hidden text-white lg:inline-block px-4 py-1 lg:ml-10 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none"
           >Github</a
         >
       </nav>
 
       <!-- Landing -->
       <main id="homes" class="h-full lg:flex lg:flex-col lg:justify-center">
-        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg aria-hidden="true" class="absolute w-0 h-0 overflow-hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <symbol id="icon-cross" viewBox="0 0 32 32">
               <title>close</title>
@@ -78,8 +86,8 @@
         <!-- Carousel -->
         <div class="page" data-modal-state="closed">
           <div class="container-page flex flex-col">
-            <div class="flex items-center justify-center pt-12 lg:pt-16 pb-5 title">
-              <h1 class="font-extrabold">
+            <div class="flex items-center justify-center pt-12 lg:pt-16 pb-5">
+              <h1 class="tagline font-extrabold uppercase text-center">
                 Learn with Our <br />
                 Community
               </h1>
@@ -91,7 +99,13 @@
                     <img src="/assets/js-500x350.29045e8b.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan Javascript</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="Javascript"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam script struktur data dan algoritma yang diimplementasikan dengan menggunakan bahasa pemrograman Javascript."
+                  >
+                    Pengenalan Javascript
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
@@ -101,7 +115,13 @@
                     <img src="/assets/ts-500x350.76ef48a9.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan Typescript</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="Typescript"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam script struktur data, algoritma, analisis matematika dan sebagainya yang diimplementasikan dengan menggunakan bahasa pemrograman TypeScript."
+                  >
+                    Pengenalan Typescript
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
@@ -111,7 +131,13 @@
                     <img src="/assets/php-500x350.64987edf.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan PHP</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="PHP"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman PHP."
+                  >
+                    Pengenalan PHP
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
@@ -121,7 +147,13 @@
                     <img src="/assets/python-500x350.8ef391f2.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan Python</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="Python"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Python."
+                  >
+                    Pengenalan Python
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
@@ -131,7 +163,13 @@
                     <img src="/assets/cpp-500x350.38377598.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan C++</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="CPP"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam script struktur data, algoritma, analisis matematika dan sebagainya yang diimplementasikan dengan menggunakan bahasa pemrograman C++."
+                  >
+                    Pengenalan C++
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
@@ -141,7 +179,13 @@
                     <img src="/assets/go-500x350.2ffc6ee5.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan Golang</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="Golang"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Go."
+                  >
+                    Pengenalan Golang
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
@@ -151,14 +195,20 @@
                     <img src="/assets/java-500x350.9491742c.jpg" />
                   </picture>
                   <div class="card__category">Basic</div>
-                  <h3 class="card__title">Pengenalan Java</h3>
+                  <h3
+                    class="card__title"
+                    data-repo="Java"
+                    data-description="Repositori ini berisi kumpulan dari berbagai macam contoh struktur data, algoritma dan komputasi matematika yang diimplementasikan dengan menggunakan bahasa pemrograman Java."
+                  >
+                    Pengenalan Java
+                  </h3>
                   <button class="card__button px-3 py-1 rounded">Let's Go! &raquo;</button>
                 </article>
               </div>
             </div>
           </div>
           <div class="overlay"></div>
-          <div class="modal-wrapper">
+          <div class="modal-wrapper flex">
             <div class="modal">
               <button class="modal__close-button" type="button">
                 <svg class="icon icon-cross">
@@ -168,25 +218,18 @@
               <div class="modal__scroll-area">
                 <header class="modal__header">
                   <div class="card__background">
-                    <img class="card__background-image" src=" " />
+                    <img class="card__background-image" />
                   </div>
                 </header>
                 <main class="modal__content">
                   <div class="modal__category"></div>
                   <h1 class="modal__title"></h1>
                   <br />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum
-                    vero nam?
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo sint debitis? Dolorem est at voluptatum obcaecati tempore eaque perferendis. Totam at consectetur commodi porro atque eligendi rerum
-                    vero nam?
-                  </p>
+                  <p class="modal__description"></p>
 
                   <div class="text-center py-2">Ayo, tunggu apa lagi?</div>
                   <div class="flex justify-center">
-                    <button class="card__button px-3 py-1 rounded justify-center"><span>Let's Go!</span>&nbsp;<span>&raquo;</span></button>
+                    <a href="" target="_blank" rel="noopener noreferrer" class="modal__anchor card__button px-3 py-1 rounded justify-center"><span>Let's Go!</span>&nbsp;<span>&raquo;</span></a>
                   </div>
                 </main>
               </div>
@@ -204,8 +247,11 @@
           </div>
           <div class="flex items-center">
             <p class="text-base text-white tracking-wider">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium aliquid corporis rem, iure itaque accusamus non assumenda incidunt eos corrupti, natus doloribus reiciendis laborum vero excepturi
-              fugit, possimus repudiandae. Officiis vero placeat optio atque cupiditate voluptatum ipsum! Reprehenderit culpa mollitia assumenda aut impedit possimus minus praesentium tenetur ullam quibusdam.
+              Bellshade adalah organisasi yang bergerak di bidang edukasi dan bersifat sumber terbuka (open source). Bellshade dikelola dan berada di bawah naungan komunitas Web Programming UNPAS (WPU).
+              <br />
+              <br />
+              Nama Bellshade sendiri diambil dari bahasa Inggris yang berarti "penutup lampu belajar" yang mengarahkan cahaya dari lampu agar fokus pada tujuan dan tepat sasaran. Dengan nama ini, Bellshade diharapkan dapat
+              menjadi wadah untuk menerangi dan mengarahkan serta memberikan ilmu kepada orang yang membutuhkan, terutama di bidang teknologi.
             </p>
           </div>
         </div>
@@ -217,12 +263,12 @@
           <div class="w-full mb-4">
             <h1 class="text-5xl font-extrabold top-0">Meet Our Team</h1>
           </div>
-          <div id="members" class="flex justify-center flex-wrap"></div>
+          <div id="members" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
         </div>
       </main>
 
-      <footer class="bg-blue-600">
-        <h1>Bellshade</h1>
+      <footer class="bg-blue-600 text-white mt-24 rounded-t-2xl text-center p-4">
+        <h1 class="mb-2 text-xl font-bold">Bellshade</h1>
         <p>&copy; 2021 Bellshade. All rights reserved</p>
       </footer>
     </div>
