@@ -14,17 +14,17 @@
     <!-- Wrapper -->
     <div class="container max-w-6xl mx-auto">
       <!-- Navbar -->
-      <nav class="flex items-center bg-white">
+      <nav class="z-10 fixed left-0 right-0 flex flex-wrap lg:flex-nowrap items-center justify-evenly w-full py-3 px-7 lg:px-32 bg-white">
         <a href="#" class="p-2 mr-4 flex items-center">
-          <h1 class="text-xl text-black font-bold uppercase tracking-wide text-2xl" title="Bellshade - Learn with Our Community">Bellshade</h1>
+          <h1 class="text-black font-bold uppercase tracking-wide text-2xl" title="Bellshade - Learn with Our Community">Bellshade</h1>
         </a>
-        <button class="text-white inline-flex p-2 text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-4 hover:text-white outline-none nav-toggler" data-target="#navigation">
+        <button class="inline-flex p-2 text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-4 hover:text-white outline-none nav-toggler" data-target="#navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
         </button>
 
-        <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center" id="navigation">
+        <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center" id="navigation">
           <div class="lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start text-lg flex flex-col lg:h-auto">
             <a href="#homes" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Home</span>
@@ -45,7 +45,7 @@
               href="https://github.com/bellshade"
               target="_blank"
               rel="noopener noreferrer"
-              class="lg:hidden text-white items-center inline-flex px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
+              class="lg:hidden text-white inline-block px-4 py-1 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none lg:absolute"
               >Github</a
             >
           </div>
@@ -54,14 +54,14 @@
           href="https://github.com/bellshade"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex text-white items-center px-4 py-1 btn-github bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none"
+          class="hidden text-white lg:inline-block px-4 py-1 lg:ml-10 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none"
           >Github</a
         >
       </nav>
 
       <!-- Landing -->
       <main id="homes" class="h-full lg:flex lg:flex-col lg:justify-center">
-        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg aria-hidden="true" class="absolute w-0 h-0 overflow-hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
             <symbol id="icon-cross" viewBox="0 0 32 32">
               <title>close</title>
@@ -75,8 +75,8 @@
         <!-- Carousel -->
         <div class="page" data-modal-state="closed">
           <div class="container-page flex flex-col">
-            <div class="flex items-center justify-center pt-12 lg:pt-16 pb-5 title">
-              <h1 class="font-extrabold">
+            <div class="flex items-center justify-center pt-12 lg:pt-16 pb-5">
+              <h1 class="tagline font-extrabold uppercase text-center">
                 Learn with Our <br />
                 Community
               </h1>
@@ -155,7 +155,7 @@
             </div>
           </div>
           <div class="overlay"></div>
-          <div class="modal-wrapper">
+          <div class="modal-wrapper flex">
             <div class="modal">
               <button class="modal__close-button" type="button">
                 <svg class="icon icon-cross">
@@ -214,12 +214,12 @@
           <div class="w-full mb-4">
             <h1 class="text-5xl font-extrabold top-0">Meet Our Team</h1>
           </div>
-          <div id="members" class="flex justify-center flex-wrap"></div>
+          <div id="members" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
         </div>
       </main>
 
-      <footer class="bg-blue-600">
-        <h1>Bellshade</h1>
+      <footer class="bg-blue-600 text-white mt-24 rounded-t-2xl text-center p-4">
+        <h1 class="mb-2 text-xl font-bold">Bellshade</h1>
         <p>&copy; 2021 Bellshade. All rights reserved</p>
       </footer>
     </div>
