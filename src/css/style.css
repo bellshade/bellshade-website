@@ -211,3 +211,21 @@ html {
   max-height: -moz-max-content;
   max-height: max-content;
 }
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(173, 173, 173);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1cfc0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9ccd5;
+}
