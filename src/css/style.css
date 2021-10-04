@@ -211,3 +211,7 @@ html {
   max-height: -moz-max-content;
   max-height: max-content;
 }
+
+.group {
+  scroll-margin-top: 100px;
+}
