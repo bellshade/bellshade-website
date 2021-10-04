@@ -85,7 +85,7 @@ html {
 }
 
 .card {
-  @apply relative h-60 rounded-2xl flex flex-col items-start justify-end overflow-hidden bg-white p-8;
+  @apply relative h-60 rounded-2xl flex flex-col items-start justify-end overflow-hidden bg-white p-4;
   z-index: 1;
 }
 
