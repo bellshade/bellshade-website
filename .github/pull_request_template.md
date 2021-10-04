@@ -1,14 +1,14 @@
-Closes <!-- mention the issue that you're trying to close with this PR -->
+Closes <!-- mention nomor issue yang kamu coba tutup dengan PR ini -->
 
-## Description
+## Deskripsi
 
-<!-- Describe your implementation plan and approach -->
+<!-- Deskripsikan rencana implemetasi dan pendekatan yang kamu ambil -->
 
-## Current Tasks
+## Daftar Tugas
 
-<!-- (Optional) List the tasks that you're planning to do in this PR.
-This is to indicate how much you have been progressing before this PR is ready for review -->
+<!-- (Opsional) daftar tugas yang kamu rencanakan akan dikerjakan di pull-request ini.
+Ini mengindikasikan perkembangan dari PR ini sebelum siap untuk di-review  -->
 
-- [ ] (task 1)
-- [ ] (task 2)
-- [ ] (task 3)
+- [ ] (tugas 1)
+- [ ] (tugas 2)
+- [ ] (tugas 3)

@@ -1,18 +1,18 @@
 ---
-name: Bug Report
-about: Something's not working as expected.
+name: Lapor Kesalahan
+about: Sesuatu yang tidak berjalan semestinya.
 title: ''
 labels: bug
 ---
 
-## Description
+## Deskripsi
 
-<!-- Describe the issue that you're seeing. -->
+<!-- Deskripsikan kesalahan yang kamu temukan. -->
 
-## Expected Behaviour
+## Perilaku yang diharapkan
 
-<!-- What should've happened? -->
+<!-- Apa yang seharusnya terjadi? -->
 
-## Additional Information
+## Informasi tambahan
 
-<!-- (Optional) Any additional info that you think might come in handy for debugging. -->
+<!-- (Opsional) Informasi tambahan yang kamu pikir bisa membantu dalam proses debugging. -->

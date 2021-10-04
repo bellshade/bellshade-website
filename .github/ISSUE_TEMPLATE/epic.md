@@ -1,18 +1,19 @@
 ---
 name: Epic
-about: A master issue thread which contains other smaller issues.
+about: Kumpulan isu yang berisikan berbagai isu kecil lain.
 title: ''
 labels: epic
 ---
 
-## Overview
+## Gambaran
 
-<!-- Describe what this epic is all about and how the project could benefit from it. -->
+<!-- Deskripsikan epic ini mengenai apa dan bagaimana projek ini bisa mendapatkan keuntungan darinya. -->
 
-## Current Tasks
+## Daftar Tugas
 
-<!-- List all the tasks here in markdown checkboxes. We can later spin-off these into their own issue threads through the GitHub UI. -->
+<!-- Tuliskan semua tugas menggunakan markdown checkbox.
+Kami nantinya dapat mengubah ini menjadi utas isu mereka sendiri melalui GitHub UI. -->
 
-- [ ] (task 1)
-- [ ] (task 2)
-- [ ] (task 3)
+- [ ] (tugas 1)
+- [ ] (tugas 2)
+- [ ] (tugas 3)
