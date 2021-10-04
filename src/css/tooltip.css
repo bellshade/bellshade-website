@@ -1,0 +1,90 @@
+/* Untuk ttip */
+
+.ttip {
+  position: relative;
+}
+
+.ttip::after {
+  text-transform: none;
+  font-size: 16px;
+  line-height: 0;
+  user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+.ttip::after {
+  content: attr(pesan);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 12px 10px;
+  border-radius: .3ch;
+  background: white;
+  color: black;
+  z-index: 1000;
+}
+
+.ttip:hover::after {
+  display: block;
+}
+
+[pesan='']::after {
+  display: none !important;
+}
+
+.ttip:not([flow])::after,
+.ttip.atas::after {
+  bottom: calc(100% + 5px);
+}
+.ttip.atas::after {
+  left: 50%;
+  transform: translate(-50%, -.5em);
+}
+
+.ttip.bawah::after {
+  top: calc(100% + 5px);
+}
+.ttip.bawah::after {
+  left: 50%;
+  transform: translate(-50%, .5em);
+}
+
+.ttip.kiri::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  transform: translate(-.5em, -50%);
+}
+
+.ttip.kanan::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  transform: translate(.5em, -50%);
+}
+
+@keyframes animasi {
+  to {
+    opacity: 0.9;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes animasi2 {
+  to {
+    opacity: 0.9;
+    transform: translate(0, -50%);
+  }
+}
+
+.ttip.atas:hover::after,
+.ttip.bawah:hover::after {
+  animation: animasi 300ms ease-out forwards;
+}
+
+.ttip.kiri:hover::after,
+.ttip.kanan:hover::after {
+  animation: ttips-horz 300ms ease-out forwards;
+}
+

@@ -4,6 +4,7 @@ import Scrollbar from 'smooth-scrollbar'
 import 'slick-carousel'
 
 import './src/css/style.css'
+import './src/css/tooltip.css'
 
 import './node_modules/slick-carousel/slick/slick.css'
 import './node_modules/slick-carousel/slick/slick-theme.css'
