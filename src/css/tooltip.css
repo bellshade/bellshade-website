@@ -37,18 +37,18 @@
 }
 
 .tooltip:not([flow])::after,
-.tooltip.up::after {
+.tooltip.top::after {
   bottom: calc(100% + 5px);
 }
-.tooltip.up::after {
+.tooltip.top::after {
   left: 50%;
   transform: translate(-50%, -.5em);
 }
 
-.tooltip.down::after {
+.tooltip.bottom::after {
   top: calc(100% + 5px);
 }
-.tooltip.down::after {
+.tooltip.bottom::after {
   left: 50%;
   transform: translate(-50%, .5em);
 }
@@ -79,8 +79,8 @@
   }
 }
 
-.tooltip.up:hover::after,
-.tooltip.down:hover::after {
+.tooltip.top:hover::after,
+.tooltip.bottom:hover::after {
   animation: animasi 300ms ease-out forwards;
 }
 
