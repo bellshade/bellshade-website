@@ -199,6 +199,7 @@ html {
 [data-modal-state='closing'] .overlay {
   opacity: 0;
   transition: opacity 500ms ease;
+  /*data_model*/
 }
 
 /*[data-modal-state='open'] .modal__header,*/
