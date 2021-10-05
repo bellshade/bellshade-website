@@ -46,7 +46,9 @@ $(function () {
 let card
 
 const cards = document.querySelectorAll('.card')
+// eslint-disable-next-line no-unused-vars
 const cardTitle = document.querySelectorAll('.card__title')
+// eslint-disable-next-line no-unused-vars
 const cardCategory = document.querySelectorAll('.card__category')
 
 const modal = document.querySelector('.modal')
@@ -101,7 +103,7 @@ function flipAnimation(first, last, options) {
 }
 
 cards.forEach((item) => {
-  item.querySelector('.card__button').addEventListener('click', (e) => {
+  item.querySelector('.card__button').addEventListener('click', () => {
     $('.card-slider').slick('slickPause')
     card = item
     page.dataset.modalState = 'opening'
@@ -136,7 +138,7 @@ cards.forEach((item) => {
   })
 })
 
-closeButton.addEventListener('click', (e) => {
+closeButton.addEventListener('click', () => {
   page.dataset.modalState = 'closing'
   document.querySelector('body').classList.remove('no-scroll')
 
