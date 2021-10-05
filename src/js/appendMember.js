@@ -13,7 +13,7 @@ const strToDOM = (str) => {
 const appendMember = (membersContainer, observer) => (res) => {
   const converted = strToDOM(`
           <div class="team-card m-5">
-            <div class="mx-auto relative max-w-max tooltip up" pesan="${
+            <div class="mx-auto relative max-w-max tooltip top" pesan="${
             res.name == null ? res.login : res.name
           }">
               <div class="flex justify-center items-center overflow-hidden w-20 h-20 rounded-full shadow-md">
