@@ -12,10 +12,10 @@ const strToDOM = (str) => {
 
 const appendMember = (membersContainer, observer) => (res) => {
   const converted = strToDOM(`
-          <div class="team-card m-5" data-tippy-content="${
+          <div class="team-card m-5">
+            <div class="mx-auto relative max-w-max ttip atas" pesan="${
             res.name == null ? res.login : res.name
           }">
-            <div class="mx-auto relative max-w-max">
               <div class="flex justify-center items-center overflow-hidden w-20 h-20 rounded-full shadow-md">
                 <img class="w-full" src="${constant.dummyImage}" data-src="${
     res.avatar_url
@@ -34,11 +34,6 @@ const appendMember = (membersContainer, observer) => (res) => {
 
   membersContainer.append(converted)
   observer.observe(converted.querySelector('.team-card img'))
-
-  tippy(converted, {
-    theme: 'light',
-    arrow: true,
-  })
 }
 
 export default appendMember
