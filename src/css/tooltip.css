@@ -13,11 +13,7 @@
   position: absolute;
   display: none;
   opacity: 0;
-<<<<<<< HEAD
-  box-shadow: 2px 3px 4px rgb(0,0,0,0.5);
-=======
   box-shadow: 0 .1rem .4rem #00000020;
->>>>>>> c0eea3b6a462a609f04703d703cb55d1a7dc224e
 }
 .tooltip::after {
   content: attr(pesan);
