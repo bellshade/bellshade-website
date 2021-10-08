@@ -1,10 +1,10 @@
-/* Untuk ttip */
+/* Untuk tooltip */
 
-.ttip {
+.tooltip {
   position: relative;
 }
 
-.ttip::after {
+.tooltip::after {
   text-transform: none;
   font-size: 16px;
   line-height: 0;
@@ -13,9 +13,13 @@
   position: absolute;
   display: none;
   opacity: 0;
+<<<<<<< HEAD
   box-shadow: 2px 3px 4px rgb(0,0,0,0.5);
+=======
+  box-shadow: 0 .1rem .4rem #00000020;
+>>>>>>> c0eea3b6a462a609f04703d703cb55d1a7dc224e
 }
-.ttip::after {
+.tooltip::after {
   content: attr(pesan);
   text-align: center;
   white-space: nowrap;
@@ -28,7 +32,7 @@
   z-index: 1000;
 }
 
-.ttip:hover::after {
+.tooltip:hover::after {
   display: block;
 }
 
@@ -36,30 +40,30 @@
   display: none !important;
 }
 
-.ttip:not([flow])::after,
-.ttip.atas::after {
+.tooltip:not([flow])::after,
+.tooltip.top::after {
   bottom: calc(100% + 5px);
 }
-.ttip.atas::after {
+.tooltip.top::after {
   left: 50%;
   transform: translate(-50%, -.5em);
 }
 
-.ttip.bawah::after {
+.tooltip.bottom::after {
   top: calc(100% + 5px);
 }
-.ttip.bawah::after {
+.tooltip.bottom::after {
   left: 50%;
   transform: translate(-50%, .5em);
 }
 
-.ttip.kiri::after {
+.tooltip.left::after {
   top: 50%;
   right: calc(100% + 5px);
   transform: translate(-.5em, -50%);
 }
 
-.ttip.kanan::after {
+.tooltip.right::after {
   top: 50%;
   left: calc(100% + 5px);
   transform: translate(.5em, -50%);
@@ -72,20 +76,20 @@
   }
 }
 
-@keyframes animasi2 {
+@keyframes animasii {
   to {
     opacity: 0.9;
     transform: translate(0, -50%);
   }
 }
 
-.ttip.atas:hover::after,
-.ttip.bawah:hover::after {
+.tooltip.top:hover::after,
+.tooltip.bottom:hover::after {
   animation: animasi 300ms ease-out forwards;
 }
 
-.ttip.kiri:hover::after,
-.ttip.kanan:hover::after {
-  animation: ttips-horz 300ms ease-out forwards;
+.tooltip.left:hover::after,
+.tooltip.right:hover::after {
+  animation: animasii 300ms ease-out forwards;
 }
 

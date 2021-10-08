@@ -32,5 +32,10 @@
     "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.2.15",
     "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "slick-carousel": "^1.8.1",
+    "smooth-scrollbar": "^8.6.3"
   }
 }
