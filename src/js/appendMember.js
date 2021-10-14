@@ -1,8 +1,4 @@
 import constant from './constant'
-// after tippy.js replace vanilla.js
-// import tippy from 'tippy.js'
-// import 'tippy.js/dist/tippy.css'
-// import 'tippy.js/themes/light.css'
 
 const strToDOM = (str) => {
   const parser = new DOMParser()
