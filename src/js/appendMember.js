@@ -1,7 +1,4 @@
 import constant from './constant'
-import tippy from 'tippy.js'
-import 'tippy.js/dist/tippy.css'
-import 'tippy.js/themes/light.css'
 
 const strToDOM = (str) => {
   const parser = new DOMParser()
@@ -14,8 +11,8 @@ const appendMember = (membersContainer, observer) => (res) => {
   const converted = strToDOM(`
           <div class="team-card m-5">
             <div class="mx-auto relative max-w-max tooltip top" pesan="${
-            res.name == null ? res.login : res.name
-          }">
+              res.name == null ? res.login : res.name
+            }">
               <div class="flex justify-center items-center overflow-hidden w-20 h-20 rounded-full shadow-md">
                 <img class="w-full" src="${constant.dummyImage}" data-src="${
     res.avatar_url
