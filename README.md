@@ -1,6 +1,6 @@
 # Bellshade Website
 
-Visit: [bellshade.github.io](https://bellshade.github.io)
+Visit: [bellshade.org](https://bellshade.org)
 
 # Local Development
 
@@ -12,10 +12,10 @@ Lakukan cloning pada repositori ini terlebih dahulu.
 
 ```bash
 # ssh
-git clone git@github.com:bellshade/bellshade.github.io.git
+git clone git@github.com:bellshade/bellshade-website.git
 
 # https
-git clone https://github.com/bellshade/bellshade.github.io.git
+git clone https://github.com/bellshade/bellshade-website.git
 ```
 
 ### Install Package
