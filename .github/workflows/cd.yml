@@ -8,9 +8,11 @@ on:
 
 jobs:
   deployment:
+    if: github.repository == 'bellshade/bellshade-website'
+    name: Deploy to production
     runs-on: ubuntu-latest
     steps:
-      - name: executing remote ssh commands using password
+      - name: Executing remote ssh commands
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
