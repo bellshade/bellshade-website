@@ -8,7 +8,7 @@ name: Linters
 
 jobs:
   install-deps:
-    if: github.repository == 'bellshade/bellshade.github.io'
+    if: github.repository == 'bellshade/bellshade-website'
     name: Install dependencies
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +31,7 @@ jobs:
           key: ${{ github.sha }}
 
   lint:
-    if: github.repository == 'bellshade/bellshade.github.io'
+    if: github.repository == 'bellshade/bellshade-website'
     name: ESLint
     runs-on: ubuntu-latest
     needs: install-deps
