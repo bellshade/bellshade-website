@@ -13,16 +13,14 @@
   position: absolute;
   display: none;
   opacity: 0;
-  box-shadow: 0 .1rem .4rem #00000020;
-}
-.tooltip::after {
+  box-shadow: 0 0.1rem 0.4rem #00000020;
   content: attr(pesan);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 12px 10px;
-  border-radius: .3ch;
+  border-radius: 0.3ch;
   background: white;
   color: black;
   z-index: 1000;
@@ -40,29 +38,28 @@
 .tooltip.top::after {
   bottom: calc(100% + 5px);
 }
+
 .tooltip.top::after {
   left: 50%;
-  transform: translate(-50%, -.5em);
+  transform: translate(-50%, -0.5em);
 }
 
 .tooltip.bottom::after {
   top: calc(100% + 5px);
-}
-.tooltip.bottom::after {
   left: 50%;
-  transform: translate(-50%, .5em);
+  transform: translate(-50%, 0.5em);
 }
 
 .tooltip.left::after {
   top: 50%;
   right: calc(100% + 5px);
-  transform: translate(-.5em, -50%);
+  transform: translate(-0.5em, -50%);
 }
 
 .tooltip.right::after {
   top: 50%;
   left: calc(100% + 5px);
-  transform: translate(.5em, -50%);
+  transform: translate(0.5em, -50%);
 }
 
 @keyframes animasi {
@@ -88,4 +85,3 @@
 .tooltip.right:hover::after {
   animation: animasii 300ms ease-out forwards;
 }
-
