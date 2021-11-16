@@ -13,6 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
 
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -247,19 +248,33 @@
 
       <!-- About -->
       <main id="about" class="px-4 group">
-        <div class="bg-blue-600 w-full rounded-2xl lg:grid lg:grid-cols-2 p-5">
-          <div class="flex items-center justify-center flex-col mb-4 lg:mb-0">
-            <h1 class="text-5xl font-extrabold text-white tracking-wide">Get to know Us</h1>
-            <div class="w-36 h-3.5 bg-white mt-6 rounded-xl -ml-12"></div>
+        <div class="flex items-center justify-center flex-col mb-44 xs:mb-52 sm:mb-60 md:mb-44 lg:mb-52">
+          <h1 class="text-6xl font-extrabold tracking-wide">Get to know Us</h1>
+          <div class="w-36 h-3.5 bg-blue-600 mt-2 rounded-xl"></div>
+        </div>
+        <div class="grid md:grid-cols-2 justify-items-center items-start gap-y-40 xs:gap-y-52 md:gap-0">
+          <div class="about-card sm:w-4/5 -mt-4 bg-blue-600 rounded-2xl px-12 pb-16">
+            <div class="flex justify-center" style="margin-top: -35%">
+              <img src="src/img/hero.png" class="w-4/6 md:w-4/5" />
+            </div>
+            <div class="text-white">
+              <h2 class="text-3xl md-text-4xl font-extrabold mt-10 mb-4">The Community</h2>
+              <p class="font-medium">
+                Bellshade adalah organisasi yang bergerak di bidang edukasi dan bersifat sumber terbuka (open source). Bellshade dikelola dan berada di bawah naungan komunitas Web Programming UNPAS (WPU).
+              </p>
+            </div>
           </div>
-          <div class="flex items-center">
-            <p class="text-base text-white tracking-wider">
-              Bellshade adalah organisasi yang bergerak di bidang edukasi dan bersifat sumber terbuka (open source). Bellshade dikelola dan berada di bawah naungan komunitas Web Programming UNPAS (WPU).
-              <br />
-              <br />
-              Nama Bellshade sendiri diambil dari bahasa Inggris yang berarti "penutup lampu belajar" yang mengarahkan cahaya dari lampu agar fokus pada tujuan dan tepat sasaran. Dengan nama ini, Bellshade diharapkan dapat
-              menjadi wadah untuk menerangi dan mengarahkan serta memberikan ilmu kepada orang yang membutuhkan, terutama di bidang teknologi.
-            </p>
+          <div class="about-card sm:w-4/5 bg-blue-600 rounded-2xl px-12 pb-16">
+            <div class="flex justify-center" style="margin-top: -35%">
+              <img src="src/img/hero.png" class="w-4/6 md:w-4/5" />
+            </div>
+            <div class="text-white">
+              <h2 class="text-3xl md-text-4xl font-extrabold mt-10 mb-4">Our Motivation</h2>
+              <p class="font-medium">
+                Nama Bellshade sendiri diambil dari bahasa Inggris yang berarti "penutup lampu belajar" yang mengarahkan cahaya dari lampu agar fokus pada tujuan dan tepat sasaran. Dengan nama ini, Bellshade diharapkan dapat
+                menjadi wadah untuk menerangi dan mengarahkan serta memberikan ilmu kepada orang yang membutuhkan, terutama di bidang teknologi.
+              </p>
+            </div>
           </div>
         </div>
       </main>
@@ -267,8 +282,8 @@
       <!-- Team -->
       <main id="team" class="mt-24 block group">
         <div class="h-full text-center">
-          <div class="w-full mb-4">
-            <h1 class="text-5xl font-extrabold top-0">Meet Our Team</h1>
+          <div class="w-full mb-8">
+            <h1 class="text-6xl font-extrabold top-0">Meet Our Team</h1>
           </div>
           <div id="members" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5"></div>
         </div>
