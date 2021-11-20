@@ -29,37 +29,59 @@
     <meta property="og:image:height" content="856" />
     <meta name="twitter:card" content="summary_large_image" />
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 dark:bg-gray-900 dark:text-white">
     <!-- Wrapper -->
     <div class="container max-w-6xl mx-auto">
       <!-- Navbar -->
-      <nav class="z-10 fixed left-0 right-0 flex flex-wrap lg:flex-nowrap items-center justify-evenly w-full py-2 px-5 lg:px-32 bg-white">
-        <a href="#" class="p-2 mr-4 flex items-center">
-          <img class="w-40 lg:w-60" src="/nav-logo-light.jpg" alt="bellshade" title="Bellshade - Learn with Our Community" />
-        </a>
-        <button class="inline-flex p-2 text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-4 hover:text-white outline-none nav-toggler" data-target="#navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-          </svg>
-        </button>
+      <nav class="z-10 fixed left-0 right-0 flex flex-wrap lg:flex-nowrap items-center justify-evenly w-full py-2 px-5 lg:px-32 bg-white dark:bg-black">
+        <div class="flex flex-row justify-between md:justify-start">
+          <a class="lg:hidden lg:inline-block lg:w-auto px-3 py-2 mt-2.5 rounded text-gray-700 md:mt-6 md:mr-32">
+            <div class="flex items-center justify-start w-full mb-1" id="toggle">
+              <label for="toggleB" class="flex items-center cursor-pointer">
+                <!-- toggle -->
+                <div class="relative">
+                  <!-- input -->
+                  <input type="checkbox" id="toggleB" class="sr-only" />
 
-        <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center" id="navigation">
+                  <div class="doticon w-11 h-11 rounded-full transition"></div>
+                </div>
+              </label>
+            </div>
+          </a>
+          <a href="#" class="p-2 md:-mr-4 mr-4 flex items-center">
+            <img class="w-30 lg:w-60 lg:h-16 md:h-24 md:w-auto h-16" src="/nav-logo-light2.png" id="navImg" alt="bellshade" title="Bellshade - Learn with Our Community" />
+          </a>
+
+          <button
+            class="inline-flex md:ml-32 p-2 dark:bg-black dark:text-white text-gray-700 bg-gray-100 text-lg hover:bg-gray-900 rounded lg:hidden ml-auto mr-1 hover:text-white outline-none nav-toggler w-11 h-11 mt-4 md:mt-8"
+            data-target="#navigation"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-full lg:justify-center lg:ml-0" id="navigation">
           <div class="lg:inline-flex lg:flex-row lg:w-auto w-full lg:items-center items-start text-lg flex flex-col lg:h-auto">
-            <a href="#homes" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+            <a href="#homes" class="dark:text-white dark:hover:bg-white dark:hover:text-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Home</span>
             </a>
-            <a href="#about" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+            <a href="#about" class="dark:text-white dark:hover:bg-white dark:hover:text-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>About</span>
             </a>
-            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+            <a href="#" class="dark:text-white dark:hover:bg-white dark:hover:text-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Projects</span>
             </a>
-            <a href="#team" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+            <a href="#team" class="dark:text-white dark:hover:bg-white dark:hover:text-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Our Team</span>
             </a>
-            <a href="#" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
+            <a href="#" class="dark:text-white dark:hover:bg-white dark:hover:text-black lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-700 items-center justify-center hover:bg-gray-900 hover:text-white">
               <span>Contact</span>
             </a>
+
             <a
               href="https://github.com/bellshade"
               target="_blank"
@@ -69,11 +91,27 @@
             >
           </div>
         </div>
+        <a class="hidden lg:inline-block lg:w-auto w-full px-3 py-2 rounded text-gray-700 mt-2">
+          <div class="flex items-center justify-center w-full mb-1" id="toggle">
+            <label for="toggleLg" class="flex items-center cursor-pointer">
+              <!-- toggle -->
+              <div class="relative">
+                <!-- input -->
+                <input type="checkbox" id="toggleLg" class="sr-only" />
+                <!-- line -->
+                <div class="block bg-gray-600 w-14 h-8 rounded-full" id="line"></div>
+                <!-- dot -->
+                <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+              </div>
+            </label>
+          </div>
+        </a>
+
         <a
           href="https://github.com/bellshade"
           target="_blank"
           rel="noopener noreferrer"
-          class="hidden text-white lg:inline-block px-4 py-1 lg:ml-10 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none"
+          class="hidden text-white lg:inline-block px-4 py-1 lg:ml-4 bg-blue-600 text-lg hover:bg-gray-900 rounded lg:right-8 hover:text-white outline-none"
           >Github</a
         >
       </nav>
@@ -94,7 +132,7 @@
         <!-- Carousel -->
         <div class="page" data-modal-state="closed">
           <div class="container-page flex flex-col">
-            <div class="flex items-center justify-center pt-16 pb-5">
+            <div class="flex items-center justify-center pt-16 pb-5 mt-20">
               <h1 class="tagline font-extrabold uppercase text-center">
                 Learn with Our <br />
                 Community
@@ -217,7 +255,7 @@
           </div>
           <div class="overlay"></div>
           <div class="modal-wrapper flex">
-            <div class="modal">
+            <div class="modal dark:bg-gray-900 dark:text-gray-100">
               <button class="modal__close-button" type="button">
                 <svg class="icon icon-cross">
                   <use xlink:href="#icon-cross"></use>
