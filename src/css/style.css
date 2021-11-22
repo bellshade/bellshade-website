@@ -182,7 +182,7 @@ html {
 }
 
 .modal__content {
-  @apply p-8 text-gray-600 leading-6;
+  @apply p-8 text-gray-600 dark:text-white leading-6;
 }
 
 /* [data-modal-state='closed'] .modal-wrapper, */
@@ -226,4 +226,46 @@ html {
 
 .group {
   scroll-margin-top: 100px;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+}
+
+input:checked ~ #line {
+  background-color: lightskyblue;
+}
+
+input:checked ~ #line::before {
+  content: '\01F31E';
+  margin-top: 5px !important;
+  position: absolute;
+}
+
+input:not(:checked) ~ #line::before {
+  content: '\01F319';
+  transform: translateX(100%);
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.doticon {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+}
+
+input:not(:checked) ~ .doticon::after {
+  width: 35px !important;
+  height: 35px !important;
+  content: '\01F319';
+  font-size: 30px;
+}
+
+input:checked ~ .doticon::after {
+  content: '\01F31E';
+  width: 35px !important;
+  height: 35px !important;
+  font-size: 30px;
 }
