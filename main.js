@@ -178,3 +178,43 @@ getPublicMembers().then((members) => {
   const appender = appendMember(membersContainer, observer)
   members.forEach(appender)
 })
+
+// darkmode switch
+document.querySelectorAll('input[type="checkbox"]').forEach((data) => {
+  data.addEventListener('change', (event) => {
+    bgSwitch(event)
+  })
+})
+
+const html = document.querySelector('html')
+const toggle = document.querySelectorAll("input[type='checkbox']")
+const imgNav = document.getElementById('navImg')
+if (
+  localStorage.theme === 'dark' ||
+  (!('theme' in localStorage) &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches)
+) {
+  html.classList.add('dark')
+  imgNav.setAttribute('src', '/nav-logo-dark.png')
+  toggle.forEach((data) => {
+    data.checked = true
+  })
+} else {
+  html.classList.remove('dark')
+  imgNav.setAttribute('src', '/nav-logo-light2.png')
+  toggle.forEach((data) => {
+    data.checked = false
+  })
+}
+
+const bgSwitch = (event) => {
+  if (event.target.checked) {
+    html.classList.add('dark')
+    imgNav.setAttribute('src', '/nav-logo-dark.png')
+    localStorage.theme = 'dark'
+  } else {
+    html.classList.remove('dark')
+    imgNav.setAttribute('src', '/nav-logo-light2.png')
+    localStorage.theme = 'light'
+  }
+}
