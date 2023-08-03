@@ -32,6 +32,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "tailwindcss": "^2.2.15",
-    "vite": "^2.5.4"
+    "vite": "^2.9.16"
   }
 }
